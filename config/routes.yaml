@@ -1,0 +1,12 @@
+index:
+    path: /
+    controller: App\Controller\TiendaController::index
+
+articulo:
+    path: /articulo/{id}
+    controller: App\Controller\TiendaController::articulo
+
+sugerencias:
+    path: /sugerencias
+    controller: App\Controller\TiendaController::sugerencias
+
