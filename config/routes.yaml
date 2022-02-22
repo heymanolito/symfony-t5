@@ -10,3 +10,6 @@ sugerencias:
     path: /sugerencias
     controller: App\Controller\TiendaController::sugerencias
 
+registro:
+    path: /registro
+    controller: App\Controller\TiendaController::registro
