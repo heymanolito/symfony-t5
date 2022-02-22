@@ -15,18 +15,27 @@
             section {
                 background-color: #d1d1d1;
             }
+            nav a {
+                text-decoration: none;
+            }
+            nav a:link {
+                color: black;
+            }
+
+            nav a:hover {
+                font-style: oblique;
+            }
 			
 		</style>
     </head>
     
     <body>
 		<div class="cabecera">
-            <nav>
-                <a href="/{{ path('sugerencias') }}">Sugerencias</a>
-                <a href="/{{ path('registro') }}">Registro</a>
-            </nav>
         </div>
-
+        <nav>
+            <a href="/{{ path('sugerencias') }}">Sugerencias</a>
+            <a href="/{{ path('registro') }}">Registro</a>
+        </nav>
 		<section>
 		<div>
         {% block content %}{% endblock %}
