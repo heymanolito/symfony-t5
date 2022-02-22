@@ -95,7 +95,8 @@ class TiendaController extends AbstractController
 
         if ($request->query->get('observ'))
         {
-            return new Response(sprintf("<html><body>Se ha guardado su sugerencia: %s</body></html>", $request->query->get('observ')));
+            return new Response(sprintf("<html><body>Se ha guardado su sugerencia: %s</body></html>",
+                $request->query->get('observ')));
         }
 
         return $this->render('sugerencias.twig', array(
